@@ -1,0 +1,807 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empatage &#8212; Brass&#39; de l&#39;Eyre</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/Cube-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/kittons-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/slideshow-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/style-dialogue-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/style_business_canvas-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/style_flipping_card-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/style_wheel-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/wheel_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-brasserie");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Brassage/Procedure/Brassage/Empatage';</script>
+    <link rel="canonical" href="https://deugz.github.io/jb-brasserie/_build/html/Brassage/Procedure/Brassage/Empatage.html" />
+    <link rel="shortcut icon" href="../../../_static/logo-Vince.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Ebullition" href="Ebullition.html" />
+    <link rel="prev" title="Journée Brassage" href="Brassage_Main.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠ Site En Development ⚠</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo-Vince.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo-Vince.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../to-include.html">A inclure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">📃 L`Asso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../Asso/Asso_Main.html">Présentation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Asso/Membres/Membres_Main.html">Espace Membres</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Asso/Membres/Calendrier-brassage.html">Calendrier des Activités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Asso/Membres/Documents/Doc_Main.html">Autres Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Asso/Membres/Outils.html">Outils Participatifs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Asso/Rejoins.html">➥ Rejoins nous!</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">💪 La Brasserie</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Brassage_Main.html">Présentation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Debutants/Debutants_Main.html">Espace Débutant</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Debutants/Tutos/Tuto-Biere.html"><em>C’est quoi une Bière?</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Debutants/Tutos/Tuto-Etapes.html"><em>Comment on fabrique une Bière?</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Procedure_main.html">Déroulement / Procedures</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Preparation/Preparation_Main.html">Journée Préparation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Preparation/Recette.html">Recette</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="Brassage_Main.html">Journée Brassage</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Empatage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ebullition.html">Ebullition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Refroidissement.html">Refroidissement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fermentation-primaire.html">Fermentation Primaire</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Embouteillage/Embouteillage_Main.html">Journée Embouteillage</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Embouteillage/Lavage-bouteilles.html">Lavage des bouteilles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Embouteillage/Preparation.html">Preparation a l’embouteillage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Embouteillage/Sucrage.html">Sucrage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Embouteillage/Embouteillage.html">Embouteillage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Embouteillage/Nettoyage-Rangement.html">Nettoyage / Rangement</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Espace_Brasseurs/Brasseurs.html">Espace Brasseurs</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Espace_Brasseurs/Outils/Outils.html">Outils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Espace_Brasseurs/Ingredients/Stock-ingredients.html">⚠️ Stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Espace_Brasseurs/Outils/Tracabilite-Brassage.html">Traçabilité Brassage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Espace_Brasseurs/Outils/Cout-Revient.html">Cout de reviens</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Venir-brasser.html">➥ Venir Brasser</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🍺 Les Bières</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Bieres/Liste/Varietes.html">Variétés</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/PremiEyre/PremiEyre.html">Premi’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/DeglinguEyre/DeglinguEyre.html">Deglingu’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/AmEyre/AmEyre.html">Am’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/MusicalEyre/MusicalEyre.html">Musical’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/NeipalEyre/NeipalEyre.html">Neipal’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/PeuchEyre/PeuchEyre.html">Peuch’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/SanginEyre/SanginEyre.html">Sanguin’Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/Triple-Rouste/Triple-Rouste.html">Triple Rouste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/SolEyre/SolEyre.html">Sol’ Eyre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Bieres/Liste/Test/Test.html">Test</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Bieres/Magasin-bieres.html">➥ Le Magasin</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎉 Les Evenements</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../Evenements/A-Venir/Fete-Brasserie/Fete-Brasserie.html">✅ 29/06/24  Fête de la Brasserie</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Evenements/Passes/Passe.html">Les Archives …</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Evenements/Passes/2024/2024_Main.html">2024</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Evenements/Passes/2024/Travaux_Brass.html">Travaux</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">📦 Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Annex/Site/Site_Main.html">Cette Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Annex/Site/Comment.html">Comment ça marche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Annex/Site/Plus-loins.html">Aller plus loins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Annex/References/bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Annex/Cool-site.html">Autres sites sympas</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Deugz/jb-brasserie" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/jb-brasserie/edit/main/_build/html/Brassage/Procedure/Brassage/Empatage.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/jb-brasserie/issues/new?title=Issue%20on%20page%20%2FBrassage/Procedure/Brassage/Empatage.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/Brassage/Procedure/Brassage/Empatage.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Empatage</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concassage">Concassage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-malt">Le Malt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brassage">Brassage</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="empatage">
+<h1>Empatage<a class="headerlink" href="#empatage" title="Permalink to this heading">#</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Nettoyage ?</p>
+</div>
+<p>Vérifier la présence du matériel consommable nécessaire (malt, houblon, levure, gaz) et la bonne configuration des éléments principaux de la brasserie (bruleurs sous les cuves, structure métal stable, cuves et tuyaux propres, pompes en états de fonctionner).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Insérer une image avec les différentes cuves et leur dénomination</p>
+<ul class="last simple">
+<li>cuve 1 rincage</li>
+<li>cuve 2 empatage</li>
+<li>cuve 3 ebulition</li>
+</ul>
+</div>
+<div class="figure align-default" id="cuves-ferment-1">
+<a class="reference internal image-reference" href="../../../_images/cuve-ferment-2.jpg"><img alt="../../../_images/cuve-ferment-2.jpg" src="../../../_images/cuve-ferment-2.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Les différentes cuves pour le brassage</span><a class="headerlink" href="#cuves-ferment-1" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Cuve 1: Rinçage</label><div class="sd-tab-content docutils">
+Description, volume etc</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Cuve 2: Empatage </label><div class="sd-tab-content docutils">
+<p>Description, volume etc</p>
+<ul class="simple">
+<li>Prendre une photo ou l’on voit le fond filtrant!</li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Cuve 3: Ebullition</label><div class="sd-tab-content docutils">
+Description, volume etc</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Quelles types de bruleurs sous quelles cuves ?</p>
+</div>
+<p>Remplir la cuve d’empâtage (cuve du milieu) selon le volume prévu dans la recette. Attention le calcul du volume d’eau avec la réglette ne se fait que lorsqu’il n’y a pas le fond filtrant et est à prendre préférentiellement sur le côté de la cuve. Penser à installer celui-ci une fois le volume atteint.</p>
+<ul class="simple">
+<li>8L sous le fond filtrant</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Faire un lien vers la page recette qui indique ou trouver l’information sur le volume d’eau a remplir dans la cuve</p>
+</div>
+<p>Allumer le brûleur sous la cuve d’empâtage (prévoir une cale sous le manche du brûleur si nécessaire) et le mettre au maximum.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Insérezr image pour montrer la procédure</p>
+<ul class="simple">
+<li>appuyer sur bouton rouge (jusqu’a ce que la temperature soit assé chaude - sécurité)
+allumer le bruleur du milieu au debut</li>
+</ul>
+<p class="last">Cration d’un circuit de recirculation en utilisant les pompes (pour chauffer plus rapidement)</p>
+</div>
+<ul class="simple">
+<li>Modif profil eau: <a class="reference external" href="https://www.moneaudebrassage.fr/?departement=33&amp;commune=MIOS&amp;quartier=MIOS%20&amp;beerstyle=21C%20-%20Hazy%20IPA&amp;volume=110&amp;volumeRincage=93&amp;CaSO4=17.923395408026096&amp;CaCl2=7.366037774046777e-15&amp;malts=%5B%5B39,26.15%5D,%5B21,7.47%5D,%5B15,1.69%5D,%5B7,1.89%5D%5D&amp;pHMash=5.50" rel="noopener noreferrer" target="_blank">Site de calcul</a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A ajuster en fonction de la recette, on modifie le profile pour favoriser l’action des enzymes</p>
+</div>
+<div class="section" id="concassage">
+<h2>Concassage<a class="headerlink" href="#concassage" title="Permalink to this heading">#</a></h2>
+<div class="figure align-default" id="concassage-setup">
+<a class="reference internal image-reference" href="../../../_images/concassage-setup.jpg"><img alt="../../../_images/concassage-setup.jpg" src="../../../_images/concassage-setup.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Le setup pour concasser le malt</span><a class="headerlink" href="#concassage-setup" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Expliquer la variation de taille du mout pour faciliter l’extraction de sucres fermentiscibles par les levures</p>
+</div>
+<p>Peser le grain et le concasser à l’aide du moulin à rouleau et d’une perceuse. Si le moulin se dérègle il est possible de le re-régler en desserrant les écrous et en tournant la tige ronde qui sort du bloc métallique. Penser à bien resserrer les écrous afin qu’il ne se dérègle plus. Tous les grains doivent être à minima ouverts, dans l’idéal cassés en 4 à 8 morceaux. La présence de farine n’est pas gênante si elle n’est pas trop importante. Plus il y a de farine, plus les sucres sont faciles à extraire mais plus il y a de risques de colmater le filtre de la cuve. L’écorce du grain sert normalement de filtre naturel dans la cuve d’empatage. Si les écorces sont en grande majorité réduite en poussière, il est possible d’ajouter des balles de riz pour compenser.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>2 types de stocks, bac bleu pour truc entamés et salle ferment pour les consommables neufs</p>
+<p class="last">On peut aussi potentiellement extraire quelques données de <a class="reference external" href="https://www.dago.beer/brassage-amateur/concassage-du-malt" rel="noopener noreferrer" target="_blank">cet article</a>, pour expliquer plus en profondeur le concassage du malt</p>
+</div>
+<div class="section" id="le-malt">
+<h3>Le Malt<a class="headerlink" href="#le-malt" title="Permalink to this heading">#</a></h3>
+<div class="figure align-default" id="malt-etiquette">
+<a class="reference internal image-reference" href="../../../_images/Malt-etiquette.jpg"><img alt="../../../_images/Malt-etiquette.jpg" src="../../../_images/Malt-etiquette.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">L’etiquette du Malt</span><a class="headerlink" href="#malt-etiquette" title="Permalink to this image">#</a></p>
+</div>
+<p>Remplir la cuve d’eau chaude (cuve de 100 litres sur petit brûleur à droite) et allumer le brûleur au maximum. Nous visons une température de 80° (attention de ne pas la dépasser).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Expliquer pourquoi il ne faut pas dépasser 80 degré (destruction des enzymes ?)</p>
+</div>
+<p>Installer le système de recirculation dans la cuve d’empâtage : faire couler par gravité dans un seau le liquide sous le filtre et installer une chaussette à houblon en guise de filtre à l’extrémité du tuyau. A l’aide d’une pompe, récupérer le liquide filtré et le réinjecter en haut de cuve. Cette filtration permettra d’éviter l’encrassement de la pompe. Jouer sur l’ouverture de la vanne du bas pour avoir un volume de liquide dans le seau peu important (max 10-15 cm). Cela nécessite une vérification continue.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Plus a jour, réécrire en prenant en compte le sytstème de pompe</p>
+<p>Pas trés clair, demander des explications</p>
+<ul class="last simple">
+<li>photo du système de recirculation</li>
+</ul>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<blockquote>
+<div>Paragraphe explicatif</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="figure align-default" id="presi-banc">
+<a class="reference internal image-reference" href="../../../_images/Prési-banc.jpg"><img alt="../../../_images/Pr%C3%A9si-banc.jpg" src="../../../_images/Pr%C3%A9si-banc.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Le présibanc et son système de double pompes</span><a class="headerlink" href="#presi-banc" title="Permalink to this image">#</a></p>
+</div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><strong>le fonctionnement de la pompe</strong></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<blockquote>
+<div>Paragraphe explicatif</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="figure align-default" id="pompe-close">
+<a class="reference internal image-reference" href="../../../_images/Pompe-close.jpg"><img alt="../../../_images/Pompe-close.jpg" src="../../../_images/Pompe-close.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Les pompes</span><a class="headerlink" href="#pompe-close" title="Permalink to this image">#</a></p>
+</div>
+</div>
+</div>
+</div>
+<p>Chauffer l’eau à la température ciblée pour le premier pallier d’empâtage + environ 2 degrés. Ces 2 degrés sont à moduler en fonction de la masse de grain qui sera ajoutée dans l’eau. Plus la masse de grain est importante, plus l’eau peut être chauffée au-dessus de la valeur prévue pour le premier palier. Il est toutefois important de remuer vigoureusement l’eau chaude à l’approche de la température ciblée afin d’homogénéiser le liquide présent dans la cuve. Il peut aussi être nécessaire de doubler la mesure de la température avec le thermomètre de cuisine.</p>
+<p>Couper le feu et introduire le malt concassé. Remuer le mélange au fur et à mesure de l’introduction des céréales. Mélanger quelques minutes l’ensemble du mélange afin d’homogénéiser la maische. Si la température est égale à celle prévue ou légèrement au-dessus, mettre le couvercle sur la cuve. Si la température est plus basse il est possible de rallumer le brûleur à faible intensité jusqu’à atteindre la température ciblée (afin d’éviter de brûler le fond de la cuve).</p>
+<p>Déclencher un minuteur pour le temps nécessaire au palier.</p>
+<p>Remuer le mélange régulièrement (toutes les 10 minutes environ) en raclant bien le fond filtrant et remettre le couvercle. Si la température descend de 2 ou 3 degrés sous la température ciblé remettre le brûleur sur faible intensité en remuant régulièrement.</p>
+</div>
+</div>
+<div class="section" id="brassage">
+<h2>Brassage<a class="headerlink" href="#brassage" title="Permalink to this heading">#</a></h2>
+<div class="figure align-default" id="brassage-1">
+<a class="reference internal image-reference" href="../../../_images/Brassage-1.jpg"><img alt="../../../_images/Brassage-1.jpg" src="../../../_images/Brassage-1.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Brassage-1</span><a class="headerlink" href="#brassage-1" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Photo avec des gens:</p>
+<ul class="last simple">
+<li>Receuillir leur autorisation.<ul>
+<li>Formulaire ? peut etre la possibilité de le remplir l’orsqu’on devient adhérent a l’asso ?</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Brassage\Procedure\Brassage"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Brassage_Main.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Journée Brassage</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Ebullition.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ebullition</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concassage">Concassage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-malt">Le Malt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brassage">Brassage</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <strong>Vincent Deguin</strong> (with ❤️)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
+
+
+<br><img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/> 
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
